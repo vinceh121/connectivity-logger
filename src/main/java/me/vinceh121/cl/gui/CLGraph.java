@@ -1,4 +1,4 @@
-package me.vincent.cl.gui;
+package me.vinceh121.cl.gui;
 
 import java.awt.BorderLayout;
 import java.util.Arrays;
@@ -23,7 +23,7 @@ import org.jfree.data.time.TimeSeries;
 import org.jfree.data.time.TimeSeriesCollection;
 import org.jfree.data.xy.XYDataset;
 
-import me.vincent.cl.PingResult;
+import me.vinceh121.cl.PingResult;
 
 public class CLGraph extends JPanel implements Consumer<PingResult> {
 	private static final long serialVersionUID = -712940644358855573L;

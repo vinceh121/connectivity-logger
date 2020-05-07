@@ -1,4 +1,4 @@
-package me.vincent.cl.loggers;
+package me.vinceh121.cl.loggers;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.function.Consumer;
 
-import me.vincent.cl.PingResult;
+import me.vinceh121.cl.PingResult;
 
 public abstract class AbstractFileLogger implements Consumer<PingResult> {
 	protected FileOutputStream out;

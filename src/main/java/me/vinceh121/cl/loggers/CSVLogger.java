@@ -1,9 +1,9 @@
-package me.vincent.cl.loggers;
+package me.vinceh121.cl.loggers;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 
-import me.vincent.cl.PingResult;
+import me.vinceh121.cl.PingResult;
 
 public class CSVLogger extends AbstractFileLogger {
 

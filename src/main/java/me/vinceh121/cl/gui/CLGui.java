@@ -1,4 +1,4 @@
-package me.vincent.cl.gui;
+package me.vinceh121.cl.gui;
 
 import java.awt.AWTException;
 import java.awt.BorderLayout;
@@ -30,8 +30,8 @@ import javax.swing.WindowConstants;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 
-import me.vincent.cl.ConnectivityPinger;
-import me.vincent.cl.loggers.CSVLogger;
+import me.vinceh121.cl.ConnectivityPinger;
+import me.vinceh121.cl.loggers.CSVLogger;
 
 public class CLGui extends JFrame {
 	private static final long serialVersionUID = 1L;

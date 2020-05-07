@@ -1,4 +1,4 @@
-package me.vincent.cl;
+package me.vinceh121.cl;
 
 import java.io.IOException;
 import java.net.InetAddress;
