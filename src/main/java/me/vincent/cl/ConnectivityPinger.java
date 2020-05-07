@@ -80,7 +80,7 @@ public class ConnectivityPinger {
 				try {
 					Thread.sleep(ConnectivityPinger.this.interval);
 				} catch (final InterruptedException e) {
-					e.printStackTrace();
+					System.out.println("Pinger thread interrupted");
 				}
 			}
 		}, "pinging-thread");

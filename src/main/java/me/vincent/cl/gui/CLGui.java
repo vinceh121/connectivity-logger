@@ -96,6 +96,14 @@ public class CLGui extends JFrame {
 			public void windowActivated(final WindowEvent e) {
 			}
 		});
+
+		this.cn.addListener(r -> {
+			if (r.getHTTPError() != null || r.getDnsError() != null) {
+				flashTrayIcon(imgIconError);
+			} else {
+				flashTrayIcon(imgIconPing);
+			}
+		});
 	}
 
 	private void setupImages() {
@@ -278,6 +286,18 @@ public class CLGui extends JFrame {
 			}
 		});
 		mnInterval.add(mntTimeUnit);
+	}
+
+	private void flashTrayIcon(final ImageIcon img) {
+		new Thread(() -> {
+			trayIcon.setImage(img.getImage());
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			trayIcon.setImage(imgIcon.getImage());
+		}, "TrayIconFlasher").start();
 	}
 
 	class MyListModel extends AbstractListModel<String> {
